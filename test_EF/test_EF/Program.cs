@@ -9,17 +9,13 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
         builder.Services.AddControllers();
-
+        
         string connectionsString = builder.Configuration.GetConnectionString("DefaultConnection");
         builder.Services.AddDbContext<SchoolDbContext>(options => options.UseSqlServer(connectionsString));
 
         var app = builder.Build();
 
         app.MapControllers();
-
-        app.MapGet("/", () => "Hello World!");
-
-        app.MapGet("/hi", () => "hi");
 
         app.Run();
     }

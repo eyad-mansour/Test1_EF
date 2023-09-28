@@ -22,6 +22,26 @@ namespace test_EF.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("test_EF.Models.Course", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CoureseCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Technology")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Course");
+                });
+
             modelBuilder.Entity("test_EF.Models.Student", b =>
                 {
                     b.Property<int>("Id")
@@ -61,23 +81,6 @@ namespace test_EF.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Technologies");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Javascript"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Advance DotNet Course"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Java Course"
-                        });
                 });
 #pragma warning restore 612, 618
         }

@@ -1,0 +1,15 @@
+﻿using System;
+namespace test_EF.Models
+{
+    public class Enrollment
+    {
+        public int CourseId {get; set;}
+
+        public int StudentId { get; set; }
+
+        public Student Student { get; set; }
+
+        public Course Course { get; set; }
+    }
+}
+
