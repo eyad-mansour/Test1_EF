@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.EntityFrameworkCore;
 using test_EF.Models;
 
@@ -10,18 +10,20 @@ namespace test_EF.Data
         public SchoolDbContext(DbContextOptions options) : base(options)
         {
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Technology>().HasData(
-                new Technology() { Id = 1, Name = "Javascript" },
-                new Technology() { Id = 2, Name = "Advance DotNet Course" },
-                new Technology() { Id = 3, Name = "Java Course" }
-                );
-        }
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Technology>().HasData(
+        //        new Technology() { Id = 1, Name = "Javascript" },
+        //        new Technology() { Id = 2, Name = "Advance DotNet Course" },
+        //        new Technology() { Id = 3, Name = "Java Course" }
+        //        );
+        //}
 
         public DbSet<Technology>Technologies { get; set; }
 
         public DbSet<Student> Students { get; set; }
+
+        public DbSet<Course> Course { get; set; } = default!;
     }
 }
 
