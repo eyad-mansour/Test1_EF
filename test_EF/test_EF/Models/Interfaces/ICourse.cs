@@ -7,7 +7,7 @@ namespace test_EF.Models.Interfaces
 
         Task<List<Course>> GetAllCourses();
 
-        Task<Course> DeleteCourse(int CourseId);
+        Task DeleteCourse(int CourseId);
 
         Task<Course> UpdateCourse(int CourseId, Course course);
 

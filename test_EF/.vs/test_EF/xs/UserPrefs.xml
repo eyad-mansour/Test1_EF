@@ -1,31 +1,34 @@
 ﻿<Properties StartupConfiguration="{370DC881-89E4-4743-AA3D-73951C7745C3}|https">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="test_EF/Models/Technology.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="test_EF/Models/Transcript.cs">
     <Files>
-      <File FileName="test_EF/Controller/TechnologiesController.cs" />
-      <File FileName="test_EF/Controller/StudentController.cs" />
-      <File FileName="test_EF/Program.cs" />
-      <File FileName="test_EF/Models/Technology.cs" Line="9" Column="6" />
-      <File FileName="test_EF/appsettings.Development.json" />
-      <File FileName="test_EF/Models/Student.cs" />
-      <File FileName="test_EF/Models/Interfaces/ICourse.cs" />
-      <File FileName="test_EF/Models/Interfaces/IStudent.cs" />
-      <File FileName="test_EF/Models/Interfaces/ITechnology.cs" />
+      <File FileName="test_EF/Models/Services/StudentServices.cs" Line="10" Column="42" />
+      <File FileName="test_EF/Models/Services/CourseServices.cs" Line="10" Column="1" />
+      <File FileName="test_EF/Models/Services/TechnologyServices.cs" Line="1" Column="1" />
+      <File FileName="test_EF/Models/Interfaces/ICourse.cs" Line="10" Column="13" />
+      <File FileName="test_EF/Controller/TechnologyController.cs" Line="20" Column="27" />
+      <File FileName="test_EF/Program.cs" Line="19" Column="48" />
+      <File FileName="test_EF/Data/SchoolDbContext.cs" Line="1" Column="1" />
+      <File FileName="test_EF/Models/Student.cs" Line="1" Column="1" />
+      <File FileName="test_EF/Models/Technology.cs" Line="1" Column="1" />
+      <File FileName="test_EF/Models/Enrollment.cs" Line="1" Column="1" />
+      <File FileName="test_EF/Models/Course.cs" Line="1" Column="1" />
+      <File FileName="test_EF/Models/Transcript.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="test_EF" expanded="True">
-            <Node name="test_EF" expanded="True">
+          <Node name="test_EF">
+            <Node name="test_EF">
+              <Node name="Dependencies" expanded="True" />
               <Node name="Controller" expanded="True" />
+              <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="Technology.cs" selected="True" />
+                <Node name="Interfaces" expanded="True" />
+                <Node name="Services" expanded="True" />
+                <Node name="Transcript.cs" selected="True" />
               </Node>
+              <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
@@ -33,5 +36,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.test__EF PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
 </Properties>
